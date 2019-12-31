@@ -1,10 +1,13 @@
 #!/bin/sh
 
+# configure these according to the instructions in README.md
 CRAFT_BTN="1413 1011"
-
-
-# craft lvl 14 greens with whatever stat
-# you set this up in the game beforehand
+CRAFT_CLOSE_BTN="1781 60"
+SALVAGE_OPEN="1178 372"
+SALVAGE_GREENS="644 316"
+SALVAGE_CLOSE="1772 60"
+INGRID_OPEN="1449 706"
+CRAFT_OPEN="1579 437"
 
 
 while [ true ]; do
@@ -24,26 +27,24 @@ while [ true ]; do
   # empty inventory - this closes the crafting interface and salvages all greens
   
   # close crafting interface
-  input tap 1781 60
+  input tap $CRAFT_CLOSE_BTN
   
   #open salvage table
-  input tap 1178 372
+  input tap $SALVAGE_OPEN
   
   #salvage all greens
-  input tap 644 316
+  input tap $SALVAGE_GREENS
   
   #exit salvage ui
-  input tap 1772 60 
+  input tap $SALVAGE_CLOSE 
   
   #re-open Ingrid
-  input tap 1449 706
+  input tap $INGRID_OPEN
   
   #open crafting iface
-  input tap 1579 437
+  input tap $CRAFT_OPEN
   
 done
-
-# TODO: automatically clear out email inbox
 
 
 
