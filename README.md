@@ -42,4 +42,18 @@ $ adb push lvlcrafting.sh /sdcard
 $ adb shell
 ```
 
-... to be continued
+## Execution
+
+1. Now that you've completed setting everything up, you should have the following:
+    * An ADB shell open to your device
+    * your character standing in the designated spot in hometown
+2. On your device, open the crafting interface, and select the item you wish to craft LOTs of. I had good luck with a level 14 green cap. Pick a stat for it that uses an essence you have a good amount of and want more of.
+3. Now, you're ready to run the script. In your adb window, run the following:
+```
+$ cd /sdcard
+$ sh ./lvlcrafting.sh
+```
+4. The script should now run and you will see that your selected item is crafted over and over and over, etc. Make sure that once your inventory is full, everything is automatically salvaged, and that crafting automatically resumes.
+5. If something fails, you may have to adjust some of the coordinates. Stop the script by pressing CTRL-C in the ADB window, and then go back to the part of setup that deals with whatever is failing. Make adjustments to the coordinates until you are successful.
+6. Once everything is working, you should be able to let this thing run for hours, if necessary. This process does use up a LOT of gold, so monitor that and take breaks to farm more if needed.
+7. Good luck, and enjoy your MAXED-OUT crafting skill!
