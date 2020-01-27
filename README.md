@@ -1,6 +1,8 @@
 # Eternium
 
-If you're not playing this awesome mobile RPG, then you should be.
+If you're not playing this awesome mobile RPG, then you should be. 
+
+Get it here: https://play.google.com/store/apps/details?id=com.makingfun.mageandminions
 
 ## Script to level crafting
 
